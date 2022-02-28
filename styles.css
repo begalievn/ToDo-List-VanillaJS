@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 1300px;
+  max-width: 1200px;
+  margin: 5px auto 0;
+  height: 90vh;
+  min-height: 90vh;
+  background-color: rgb(216, 231, 226);
+}
+
+header {
+  width: 45%;
+  height: 70px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+.title {
+  margin-left: 30px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+main {
+  width: 1000px;
+  min-height: 500px;
+  margin: 20px 0 0 40px;
+  /* background-color: beige; */
+  padding-top: 10px;
+}
+
+.task {
+  width: 800px;
+  min-height: 50px;
+  background-color: rgb(205, 245, 247);
+  border: solid 2px black;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-left-border {
+  width: 20px;
+  background-color: rgb(206, 86, 186);
+}
+
+.left-border-active {
+  background-color: green;
+}
+
+.task p {
+  width: 700px;
+  font-size: 22px;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+}
+.task-mark {
+  width: 40px;
+  background-color: rgb(140, 203, 233);
+}
+
+.task-mark-active {
+  background-color: green;
+}
+
+.fa-plus {
+  font-size: 50px;
+  color: black;
+}
+
+.add-task {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  width: 30px;
+  height: 7px;
+  background-color: rgb(92, 156, 240);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.plus-vertical {
+  transform: rotate(90deg);
+}
+
+/* Input task  */
+.input-task {
+  width: 800px;
+  height: 150px;
+  /* background-color: aqua; */
+  display: none;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 23px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+}
+
+input {
+  width: 600px;
+  height: 50px;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  width: 100px;
+  height: 40px;
+  color: green;
+  margin-right: 20px;
+}
+
+#cancel-button {
+  width: 100px;
+  height: 40px;
+  color: red;
+}
