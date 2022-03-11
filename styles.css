@@ -8,7 +8,6 @@
   width: 1300px;
   max-width: 1200px;
   margin: 5px auto 0;
-  height: 90vh;
   min-height: 90vh;
   background-color: rgb(216, 231, 226);
 }
@@ -29,60 +28,26 @@ header {
   font-weight: bold;
 }
 
+/* Main part */
+
 main {
   width: 1000px;
   min-height: 500px;
   margin: 20px 0 0 40px;
-  /* background-color: beige; */
+  background-color: beige;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-top: 10px;
 }
 
-.task {
-  width: 800px;
-  min-height: 50px;
-  background-color: rgb(205, 245, 247);
-  border: solid 2px black;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.task-left-border {
-  width: 20px;
-  background-color: rgb(206, 86, 186);
-}
-
-.left-border-active {
-  background-color: green;
-}
-
-.task p {
-  width: 700px;
-  font-size: 22px;
-  font-family: Poppins;
-  display: flex;
-  align-items: center;
-}
-.task-mark {
-  width: 40px;
-  background-color: rgb(140, 203, 233);
-}
-
-.task-mark-active {
-  background-color: green;
-}
-
-.fa-plus {
-  font-size: 50px;
-  color: black;
-}
-
-.add-task {
+.plus-button {
   width: 50px;
   height: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 10px 10px;
   position: relative;
   display: flex;
   align-items: center;
@@ -105,7 +70,7 @@ main {
 .input-task {
   width: 800px;
   height: 150px;
-  /* background-color: aqua; */
+  background-color: aqua;
   display: none;
   margin-left: 10px;
 }
@@ -128,10 +93,33 @@ input {
   height: 40px;
   color: green;
   margin-right: 20px;
+  font-size: 20px;
 }
 
 #cancel-button {
   width: 100px;
   height: 40px;
   color: red;
+  font-size: 20px;
+}
+
+/* Tasks Unordered List */
+
+.tasks-ul {
+  list-style-type: none;
+}
+
+.tasks li {
+  width: 700px;
+  min-height: 30px;
+  background-color: aliceblue;
+  font-family: Poppins;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tasks-container {
+  min-height: 30px;
+  background-color: rgb(222, 248, 222);
+  margin-left: 10px;
 }

@@ -26,30 +26,25 @@
       </header>
       <main>
         <div class="tasks-container">
-          <!-- <div
-            class="task"
-            id="first-task"
-            draggable="true"
-            ondragend="deleteTask(event, this.id)"
-          >
-            <div class="task-left-border"></div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              libero?
-            </p>
-            <div class="task-mark"></div>
-          </div> -->
+          <ul class="tasks-ul">
+            <li>Loading Tasks...</li>
+          </ul>
         </div>
 
-        <div class="add-task" id="add-task">
+        <div class="plus-button" id="plus-button">
           <div class="plus-vertical plus"></div>
           <div class="plus-horizontal plus"></div>
         </div>
 
         <div class="input-task">
-          <form>
+          <form class="form-adding-tasks">
             <label for="taskName">Write your task:</label><br />
-            <input type="text" id="taskName" name="taskName" />
+            <input
+              type="text"
+              id="taskName"
+              name="taskName"
+              placeholder="New Task"
+            />
           </form>
           <button id="submit-button">Add</button>
           <button id="cancel-button">Cancel</button>
