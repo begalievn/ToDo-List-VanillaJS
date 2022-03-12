@@ -8,8 +8,9 @@
   width: 1300px;
   max-width: 1200px;
   margin: 5px auto 0;
-  min-height: 90vh;
+  min-height: 1000px;
   background-color: rgb(216, 231, 226);
+  padding-bottom: 20px;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 main {
   width: 1000px;
   min-height: 500px;
-  margin: 20px 0 0 40px;
+  margin: 20px 0 30px 40px;
   background-color: beige;
   display: flex;
   align-items: flex-start;
@@ -47,7 +48,7 @@ main {
   height: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 20px;
   position: relative;
   display: flex;
   align-items: center;
@@ -73,6 +74,7 @@ main {
   background-color: aqua;
   display: none;
   margin-left: 10px;
+  margin-bottom: 30px;
 }
 
 label {
@@ -109,17 +111,50 @@ input {
   list-style-type: none;
 }
 
-.tasks li {
-  width: 700px;
-  min-height: 30px;
-  background-color: aliceblue;
-  font-family: Poppins;
+.tasks-ul li {
+  margin: 10px 0 10px 10px;
+  font-size: 25px;
+  border: solid 1px black;
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.li-task__buttons-div {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.li-task__buttons-div button {
+  font-size: 18px;
+  width: 60px;
+}
+
+.li-task {
+  font-family: Poppins;
+  padding-left: 5px;
+  font-weight: 500;
+}
+
+.li-task p:hover {
+  cursor: pointer;
+}
+
+.paragraph-linethrough {
+  text-decoration: line-through;
+}
+
+.li-task__buttons-div button:nth-child(2) {
+  color: red;
 }
 
 .tasks-container {
   min-height: 30px;
-  background-color: rgb(222, 248, 222);
+  width: 750px;
+
   margin-left: 10px;
 }
