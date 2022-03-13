@@ -85,7 +85,17 @@ function displayTasks(tasks, placeToDisplay) {
 displayTasks(arrayOfTasks, ulElement);
 
 /* Edit button functionality */
-function editButton(element) {}
+function editButton(element) {
+  let currentLiElement = element.parentElement.parentElement;
+  console.log(currentLiElement.firstElementChild.innerHTML);
+  let textOfCurrentTask = currentLiElement.firstElementChild.innerHTML;
+  let newText = prompt("Edit the task", textOfCurrentTask);
+
+  const indexOfCurrentTask = findIndexOfTaskInArray(currentLiElement);
+  arrayOfTasks[indexOfCurrentTask].text = newText;
+  displayTasks(arrayOfTasks, ulElement);
+  localStorage.setItem("tasks", JSON.stringify(arrayOfTasks));
+}
 
 /* Delete button functionality */
 function deleteButton(element) {

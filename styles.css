@@ -55,6 +55,10 @@ main {
   justify-content: center;
 }
 
+.plus-button:hover {
+  cursor: pointer;
+}
+
 .plus {
   width: 30px;
   height: 7px;
@@ -71,15 +75,16 @@ main {
 .input-task {
   width: 800px;
   height: 150px;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: none;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom: 30px;
 }
 
 label {
-  font-size: 23px;
-  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
   font-family: Poppins;
 }
 
@@ -98,11 +103,34 @@ input {
   font-size: 20px;
 }
 
+#edit-button {
+  width: 100px;
+  height: 40px;
+  color: green;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+}
+
 #cancel-button {
   width: 100px;
   height: 40px;
   color: red;
   font-size: 20px;
+}
+
+#cancel-button2 {
+  width: 100px;
+  height: 40px;
+  color: red;
+  font-size: 20px;
+}
+
+#cancel-button:hover {
+  cursor: pointer;
 }
 
 /* Tasks Unordered List */
@@ -113,6 +141,7 @@ input {
 
 .tasks-ul li {
   margin: 10px 0 10px 10px;
+  height: 45px;
   font-size: 25px;
   border: solid 1px black;
   display: flex;
@@ -137,7 +166,11 @@ input {
 .li-task {
   font-family: Poppins;
   padding-left: 5px;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.li-task p {
+  width: 600px;
 }
 
 .li-task p:hover {
