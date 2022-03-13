@@ -58,6 +58,7 @@ cancelButton.addEventListener("click", (e) => {
   console.log(JSON.parse(localStorage.getItem("tasks"))); // to check if localStorage is storing tasks
   containerOfForm.style.display = "none";
   plusButton.style.visibility = "visible";
+  formElement.reset();
 });
 
 // Function to DISPLAY tasks on the screen
