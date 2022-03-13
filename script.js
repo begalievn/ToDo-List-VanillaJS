@@ -55,10 +55,9 @@ const cancelButton = document.getElementById("cancel-button");
 // cancel button event listener
 cancelButton.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(JSON.parse(localStorage.getItem("tasks"))); // to check if localStorage is storing tasks
+  formElement.reset(); // reset an input field
   containerOfForm.style.display = "none";
   plusButton.style.visibility = "visible";
-  formElement.reset();
 });
 
 // Function to DISPLAY tasks on the screen
